@@ -1,0 +1,94 @@
+body {
+  padding-top: 50px;
+}
+.title-module {
+  font-size: 16px;
+}
+.banner-container {
+  height: 114px;
+  .text-box {
+    width: 70%;
+    display: flex;
+    flex-direction: column-reverse;
+    .title {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .link-btn{
+      margin-bottom: 0;
+    }
+  }
+}
+.consulting-container {
+  padding-top: 45px;
+  padding-bottom: 59px;
+  .title-module {
+    margin-bottom: 50px;
+  }
+  .consulting-list {
+    padding-bottom: 30px;
+    .consulting-item {
+      display: flex;
+      color: #bebebe;
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+      border-bottom: 1px solid #46465b;
+      .date {
+        display: none;
+      }
+      .text {
+        padding: 0;
+        .title {
+          font-size: 14px;
+          margin-bottom: 3px;
+        }
+        .date {
+          display: block;
+          font-size: 10px;
+          padding: 0;
+          margin-bottom: 6px;
+          border-right: none;
+        }
+        .desc {
+          font-size: 12px;
+          line-height: 1.6;
+          /* 多行文本溢出隐藏，省略号代替 */
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical; /* 设置对齐模式 */
+          -webkit-line-clamp: 2;
+        }
+      }
+      // &:last-child {
+      //   margin-bottom: 0;
+      //   border-bottom: none;
+      //   .date {
+      //     border-right: transparent;
+      //     opacity: 0;
+      //     .year,
+      //     .mouth {
+      //       height: 0;
+      //     }
+      //   }
+      //   .text {
+      //     display: flex;
+      //     justify-content: center;
+      //     margin: 0 auto;
+      //     .more { 
+      //       font-size: 16px;
+      //       color: #bebebe;
+      //       display: flex;
+      //       align-items: center;
+      //       justify-content: center;
+      //       width: 256px;
+      //       height: 36px;
+      //       border-radius: 18px;
+      //       margin: 0 auto;
+      //       border: 1px solid #bebebe;
+      //     }
+      //   }
+      // }
+    }
+  }
+}

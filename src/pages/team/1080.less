@@ -1,0 +1,97 @@
+.banner-container {
+  .text-box {
+    .title {
+      font-size: 32px;
+    }
+    .desc {
+      margin-bottom: 15px;
+      span {
+        margin-right: 20px;
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+.team-elite-container {
+  padding: 70px 0;
+  .title-module {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .cont {
+    font-size: 16px;
+    line-height: 3;
+  }
+}
+.team-container {
+  padding: 50px 0;
+  .team-list {
+    .team-item {
+      display: flex;
+      margin-bottom: 50px;
+      .img-box {
+        width: 200px;
+        img {
+          width: 100%;
+        }
+      }
+      .text-box {
+        width: calc(100% - 230px);
+        display: flex;
+        .num {
+          font-size: 36px;
+          &::after {
+            height: 54px;
+            top: 50px;
+          }
+          &::before {
+            top: 100px;
+          }
+        }
+        .cont {
+          flex: 1;
+          .title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            span {
+              font-size: 16px;
+            }
+          }
+          .desc {
+            font-size: 14px;
+          }
+          .more {
+            font-size: 16px;
+            color: #999;
+            display: flex;
+            align-items: center;
+            span {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+      &:nth-child(2n + 1) {
+        .img-box {
+          margin-left: 30px;
+        }
+        .text-box {
+          .num {
+            margin-right: 20px;
+          }
+        }
+      }
+      &:nth-child(2n + 2) {
+        .img-box {
+          margin-right: 30px;
+        }
+        .text-box {
+          .num {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}

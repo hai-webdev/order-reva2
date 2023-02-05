@@ -1,0 +1,128 @@
+body{
+  background-color: #2B2C3F;
+}
+.banner-container {
+  height: 672px;
+  .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1440px;
+    .link-btn{
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 52px;
+      line-height: 1.46;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .desc {
+      margin-bottom: 31px;
+      span {
+        margin-right: 55px;
+        font-size: 22px;
+        margin-bottom: 16px;
+        line-height: 2;
+        color: #dedede;
+      }
+    }
+  }
+}
+.m-banner-container {
+  height: 150px;
+  display: none;
+  .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1440px;
+    .link-btn{
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 14px;
+      line-height: 1.46;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .desc {
+      margin-bottom: 31px;
+      span {
+        margin-right: 55px;
+        font-size: 22px;
+        margin-bottom: 16px;
+        line-height: 2;
+        color: #dedede;
+      }
+    }
+  }
+}
+
+.info-container{
+  background-color: #15151E;
+  position: relative;
+  height: 477px;
+  top: -90px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .info-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .info-item{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .icon{
+        width: 112px;
+        height: 112px;
+        margin-bottom: 44px;
+        img{
+          width: 100%;
+      }
+      }
+      .title{
+        font-size: 46px;
+        margin-bottom: 19px;
+        color:#fff;
+        font-weight: 100;
+      }
+      .desc{
+        color:#C2C2C2;
+        font-weight: 100;
+        font-size: 24px;
+
+      }
+    }
+  }
+}
+.content-container{
+  padding-top: 62px;
+  width: 90%;
+  max-width: 1256px;
+  margin: 0 auto 266px;
+  .title-module{
+    font-size: 52px;
+    margin-bottom: 98px;
+    text-align: center;
+    color:#fff;
+  }
+  .content{
+    font-size: 16px;
+    color:#C2C2C2;
+    line-height: 4.75;
+  }
+}
+@import "./1440.less" screen and (max-width:1440px);
+@import "./1080.less" screen and (max-width:1080px);
+@import "./mobile.less" screen and (max-width:768px);

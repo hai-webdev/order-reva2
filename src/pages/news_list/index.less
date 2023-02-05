@@ -1,0 +1,103 @@
+.title-module {
+  font-size: 52px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.banner-container {
+  height: 672px;
+  .text-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1440px;
+    .link-btn {
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 52px;
+      line-height: 1.46;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+  }
+}
+.consulting-container {
+  padding-top: 109px;
+  padding-bottom: 126px;
+  background-color: #2b2c3f;
+  .title-module {
+    margin-bottom: 150px;
+  }
+  .consulting-list {
+    .consulting-item {
+      display: flex;
+      color: #bebebe;
+      margin-bottom: 85px;
+
+      .date {
+        padding: 0 38px;
+        border-right: 1px solid #999;
+        .year {
+          font-size: 24px;
+          text-align: right;
+          margin-bottom: 10px;
+        }
+        .mouth {
+          font-size: 16px;
+          text-align: right;
+        }
+      }
+      .text {
+        padding: 0 35px;
+        .title {
+          font-size: 24px;
+          margin-bottom: 15px;
+          display: block;
+          color: #bebebe;
+        }
+        .date {
+          display: none;
+        }
+        .desc {
+          font-size: 14px;
+          line-height: 2.4;
+          display: block;
+          color: #999;
+        }
+      }
+      &:hover {
+        .text {
+          .title {
+            text-decoration: underline;
+          }
+        }
+      }
+      // &:last-child {
+      //   margin-bottom: 0;
+      //   .date {
+      //     border-right: transparent;
+      //     opacity: 0;
+      //     .year,
+      //     .mouth {
+      //       height: 0;
+      //     }
+      //   }
+      //   .text {
+      //     .more {
+      //       font-size: 24px;
+      //       color: #bebebe;
+      //     }
+      //   }
+      // }
+    }
+  }
+}
+
+@import "./1580.less" screen and (max-width: 1580px);
+@import "./1440.less" screen and (max-width: 1440px);
+@import "./1080.less" screen and (max-width: 1080px);
+@import "./mobile.less" screen and (max-width: 768px);
